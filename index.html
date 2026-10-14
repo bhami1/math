@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String & Math Functions Playground</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">JAVASCRIPT PLAYGROUND</span>
+            <h1>String & Math Functions</h1>
+            <p>Explore JavaScript functions with interactive examples.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- String Functions -->
+        <section class="panel">
+            <div class="section-heading">
+                <span class="section-icon">Aa</span>
+                <div>
+                    <h2>String Functions</h2>
+                    <p>Enter text and try different string operations.</p>
+                </div>
+            </div>
+
+            <label for="textInput">Enter your text</label>
+            <textarea id="textInput" rows="3"
+                placeholder="Example: Hello JavaScript World"></textarea>
+
+            <div class="field">
+                <label for="wordInput">Word to find or replace</label>
+                <input type="text" id="wordInput" placeholder="Example: JavaScript">
+            </div>
+
+            <div class="field">
+                <label for="replaceInput">Replacement word</label>
+                <input type="text" id="replaceInput" placeholder="Example: Programming">
+            </div>
+
+            <div class="button-grid">
+                <button data-string="length">String Length</button>
+                <button data-string="first">First Occurrence</button>
+                <button data-string="last">Last Occurrence</button>
+                <button data-string="search">Search Word</button>
+                <button data-string="slice">Slice</button>
+                <button data-string="substring">Substring</button>
+                <button data-string="substr">Substr</button>
+                <button data-string="replace">Replace First</button>
+                <button data-string="replaceAll">Replace All</button>
+                <button data-string="upper">Uppercase</button>
+                <button data-string="lower">Lowercase</button>
+            </div>
+
+            <div class="field">
+                <label for="startIndex">Start index</label>
+                <input type="number" id="startIndex" value="0">
+            </div>
+
+            <div class="field">
+                <label for="endIndex">End index / length</label>
+                <input type="number" id="endIndex" value="5">
+            </div>
+
+            <div class="result-box">
+                <div class="result-title">
+                    <h3>String Result</h3>
+                    <button class="clear-btn" id="clearString">Clear</button>
+                </div>
+                <output id="stringResult" aria-live="polite">
+                    Your result will appear here.
+                </output>
+            </div>
+        </section>
+
+        <!-- Math Functions -->
+        <section class="panel">
+            <div class="section-heading">
+                <span class="section-icon math-icon">√x</span>
+                <div>
+                    <h2>Math Functions</h2>
+                    <p>Enter numbers and calculate mathematical results.</p>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="numberInput">First number / angle</label>
+                <input type="number" id="numberInput" value="25" step="any">
+            </div>
+
+            <div class="field">
+                <label for="secondNumber">Second number</label>
+                <input type="number" id="secondNumber" value="4" step="any">
+            </div>
+
+            <div class="field">
+                <label for="minRandom">Random minimum</label>
+                <input type="number" id="minRandom" value="1" step="1">
+            </div>
+
+            <div class="field">
+                <label for="maxRandom">Random maximum</label>
+                <input type="number" id="maxRandom" value="100" step="1">
+            </div>
+
+            <p class="hint">Trigonometric functions use degrees. Power uses the first number raised to the second number.</p>
+
+            <div class="button-grid">
+                <button data-math="power">Power</button>
+                <button data-math="sqrt">Square Root</button>
+                <button data-math="round">Round</button>
+                <button data-math="ceil">Ceiling</button>
+                <button data-math="floor">Floor</button>
+                <button data-math="abs">Absolute Value</button>
+                <button data-math="sin">Sine</button>
+                <button data-math="cos">Cosine</button>
+                <button data-math="min">Minimum</button>
+                <button data-math="max">Maximum</button>
+                <button data-math="random">Random Number</button>
+            </div>
+
+            <div class="result-box">
+                <div class="result-title">
+                    <h3>Math Result</h3>
+                    <button class="clear-btn" id="clearMath">Clear</button>
+                </div>
+                <output id="mathResult" aria-live="polite">
+                    Your result will appear here.
+                </output>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built with HTML, CSS and JavaScript.</p>
+    </footer>
+</body>
+</html>
